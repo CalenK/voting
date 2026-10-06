@@ -1,0 +1,22 @@
+onload = function() {
+  const form = document.querySelector("form");
+  form.onsubmit = function(event) {
+    event.preventDefault();
+
+    let voterChoice = document.getElementById("vote");
+    voterChoice.setAttribute("class", "hidden");
+    let under18Message = document.getElementById("under-18");
+    under18Message.setAttribute("class", "hidden");
+
+    const age = parseInt(document.querySelector("input#age").value);
+
+    if (age > 18) {
+      voterChoice.removeAttribute("class");
+    } else if (age === 18) {
+      alert("You're 18, go and vote!");
+      voterChoice.removeAttribute("class");
+    } else {
+      under18Message.removeAttribute("class");
+    }
+  };
+};

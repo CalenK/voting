@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Voting</title>
+</head>
+<body>
+  <div>
+    <form>
+      <label for="age">Verify that you are over the age of 18 before you can vote</label>
+      <input id="age" type="number">
+      <button type="submit">submit</button>
+    </form>
+
+    <div id="vote" class="hidden">
+      <h1 id="new-voter"></h1>
+      <h1>Voter choice</h1>
+
+      <h2>Upcoming elections</h2>
+      <ul>
+        <li>2026 Midterms November 3rd</li>
+        <li>General election november 3rd 2026</li>
+      </ul>
+
+      <h2>Register to vote</h2>
+      <ul>
+        <li><a href="https://sos.oregon.gov/elections/Pages/registration.aspx?lang=en">oregon.gov</a></li>
+        <li><a href="https://www.vote.org/register-to-vote/">vote.org</a></li>
+      </ul>
+
+      <h2>Local Ballot Boxes</h2>
+      <ul>
+        <li><a href="https://ballotmap.org/">ballotmap</a></li>
+        <li><a href="https://voterhelpdesk.usvotefoundation.org/en/support/solutions/articles/151000049140-how-do-i-find-the-location-of-a-ballot-drop-box-">voter help desk</a></li>
+        <li><a href="https://makeaplantovote.com/early/">make a plan to vote</a></li>
+        <li><a href="https://sos.oregon.gov/elections/pages/drop-box-locator.aspx">oregon.gov</a></li>
+      </ul>
+    </div>
+
+    <div id="under-18" class="hidden">
+      <h1>Sorry but you can't vote</h1>
+
+      <p>You legally have to be 18 or older to vote in the US, but here are some websites where you can learn more about voting</p>
+      <ul>
+        <li><a href="https://www.usa.gov/voting-and-elections">usa.gov</a></li>
+        <li><a href="https://www.vote.org/">vote.org</a></li>
+        <li><a href="https://www.washingtoncountyor.gov/elections">washingtoncountyor</a></li>
+      </ul>
+    </div>
+  </div>
+</body>  
+</html>
